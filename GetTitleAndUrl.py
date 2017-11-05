@@ -26,7 +26,6 @@ def GetTitleAndUrl():
 
         #if isMatchUrl(url) == True:
         if url == 'exit':
-            print('invalid URL')
             break
 
         # TODO: isMatchUrl関数を使ってエラーハンドリングを行う
