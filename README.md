@@ -1,6 +1,6 @@
 # grl 
 
-My own command grl enables you to copy a link syntax for Markdown.
+My own command grl enables you to copy a link format for Markdown.
 
 ## 環境
 - maxOS Sierra version 10.12.6
@@ -18,8 +18,8 @@ URLを入力すると、Markdownに最適な形式で、webページタイトル
 - 以下のコマンドを打ってください。
 
 ```
-$ git clone https://github.com/struuuuggle/GetLinkSyntaxForMarkDown.git
-$ cd ./GetLinkSyntaxForMarkDown
+$ git clone https://github.com/struuuuggle/GetLinkFormatForMarkDown.git
+$ cd ./GetLinkFormatForMarkDown
 $ sh setup.sh
 // パスワードの入力が求められます
 ```

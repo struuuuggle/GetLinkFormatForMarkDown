@@ -1,46 +1,47 @@
-# coding: UTF-8
+# -*- coding: utf-8 -*-
 
-import re
 from urllib.request import urlopen
+import re
 from bs4 import BeautifulSoup
 import pyperclip
 
+# Regular expression to match URLs
+regex = re.compile('(?:(?:https?|ftp|file)://|www\.|ftp\.)[-A-Z0-9+&@#/%=~_|$?!:,.]*[A-Z0-9+&@#/%=~_|$]', re.IGNORECASE)
 
-def isMatchUrl(url):
-    pattern = r"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?"
-    matchObj = re.match(pattern, url)
 
-    if matchObj:
-        return True
-    else:
-        return False
+# 入力がURL形式であることをチェック
+def isURL(url):
+    return re.match(regex, url) != None
 
+
+# Get link format for Markdown
 def getTitleAndUrl():
     # アクセスするURL
     while True:
         url = input('>')
 
-        #if isMatchUrl(url) == True:
         if url == 'exit':
             break
 
-        # TODO: isMatchUrl関数を使ってエラーハンドリングを行う
-
-        else:
+        elif isURL(url):
             # URLにアクセスする htmlが帰ってくる
             html = urlopen(url)
 
             # htmlをBeautifulSoupで扱う
-            soup = BeautifulSoup(html, "html.parser")
+            soup = BeautifulSoup(html, 'html.parser')
 
             # タイトルとURLをmarkdown用にフォーマット
-            str1 = '[' + soup.title.string + ']' + '(' + url + ')'
+            result = '[' + soup.title.string + ']' + '(' + url + ')'
 
             #文字列をクリップボードにコピー
-            pyperclip.copy(str1)
+            pyperclip.copy(result)
 
             #フオーマットした文字列を出力
-            print(str1)
+            print(result)
+
+        else:
+            print('invalid syntax')
+            continue
 
 
 def main():
