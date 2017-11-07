@@ -3,8 +3,8 @@
 # スクリプトに実行権限を与える
 chmod a+x grl
 
-# 'GetTitleAndUrl.py'のフルパス
-abspath=`find \`pwd\` -name "GetTitleAndUrl.py"`
+# 'getLinkFormat.py'のフルパス
+abspath=`find \`pwd\` -name "getLinkFormat.py"`
 
 # grlに追記
 echo "#!/bin/sh\n\n# set command from setup.sh\npython $abspath" > grl

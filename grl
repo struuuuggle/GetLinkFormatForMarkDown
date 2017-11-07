@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # set command from setup.sh
-python /Users/Polaris/Documents/Chores/GetLinkSyntaxForMarkDown/GetTitleAndUrl.py
+python /Users/Polaris/Documents/Chores/GetLinkSyntaxForMarkDown/getLinkFormat.py

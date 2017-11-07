@@ -15,7 +15,7 @@ def isURL(url):
 
 
 # Get link format for Markdown
-def getTitleAndUrl():
+def getLinkFormat():
     # アクセスするURL
     while True:
         url = input('>')
@@ -46,7 +46,7 @@ def getTitleAndUrl():
 
 def main():
     print('Type URL(or exit)')
-    getTitleAndUrl()
+    getLinkFormat()
 
 
 if __name__ == '__main__':

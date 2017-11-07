@@ -13,7 +13,7 @@ My own command grl enables you to copy a link format for Markdown.
 ## 仕様
 URLを入力すると、Markdownに最適な形式で、webページタイトルとURLを出力します。出力結果はコンソールに表示すると同時に、クリップボードにもコピーされます。
 
-## まずやること
+## 準備
 
 - 以下のコマンドを打ってください。
 
@@ -24,3 +24,12 @@ $ sh setup.sh
 // パスワードの入力が求められます
 ```
  
+- これで準備は終了です。
+
+## 使い方
+
+```
+$ grl
+Type URL(or exit)
+> <input URL>
+```
