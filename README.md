@@ -13,31 +13,17 @@ URLを入力すると、Markdownに最適な形式で、webページタイトル
 
 ## まずやること
 
-- クローンする。
+- 以下のコマンドを打ってください。
 
 ```
-git clone https://github.com/struuuuggle/GetLinkSyntaxForMarkDown.git
-```
-
-
-
-- pythonのパスを確認
-
-```
-which python
+$ git clone https://github.com/struuuuggle/GetLinkSyntaxForMarkDown.git
+$ cd ./GetLinkSyntaxForMarkDown
+$ which python
 <your path to python>
+$ pwd
+<your path to current directory>
 ```
-
-
-
-- url.shの編集
-
-```
-cd ./GetLinkSyntaxForMarkDown
-pwd
-<current directory>
-```
-
-- url.shの`/Users/Polaris/anaconda/bin/python`を`<your path to python>`に書き換える。
+ 
+- url.shの`~/anaconda/bin/python`を`<your path to python>`に書き換える。
 - url.shの`~/Documents/Chores`を`<current directory>`に書き換える。
 
