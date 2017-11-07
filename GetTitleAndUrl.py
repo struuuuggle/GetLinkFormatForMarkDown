@@ -1,25 +1,21 @@
 # coding: UTF-8
 
+import re
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pyperclip
-import re
 
 
 def isMatchUrl(url):
-    reg = re.compile(r"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?")
-    m = reg.match(url)
+    pattern = r"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?"
+    matchObj = re.match(pattern, url)
 
-    if m:
+    if matchObj:
         return True
     else:
         return False
 
-
-
-def GetTitleAndUrl():
-    print('Type URL(or exit)')
-
+def getTitleAndUrl():
     # アクセスするURL
     while True:
         url = input('>')
@@ -47,5 +43,10 @@ def GetTitleAndUrl():
             print(str1)
 
 
+def main():
+    print('Type URL(or exit)')
+    getTitleAndUrl()
+
+
 if __name__ == '__main__':
-    GetTitleAndUrl()
+    main()

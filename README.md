@@ -1,4 +1,6 @@
-# GetLinkSyntaxForMarkDown
+# grl 
+
+My own command grl enables you to copy a link syntax for Markdown.
 
 ## 環境
 - maxOS Sierra version 10.12.6
@@ -6,7 +8,7 @@
 
 ## デモ
 
-![https://gyazo.com/4ebf633e2cd5384f119d7faf3110ecac](https://gyazo.com/4ebf633e2cd5384f119d7faf3110ecac.gif)
+![https://gyazo.com/755fb3175e4e4d54511c2e76c2c35c4b](https://gyazo.com/755fb3175e4e4d54511c2e76c2c35c4b.gif)
 
 ## 仕様
 URLを入力すると、Markdownに最適な形式で、webページタイトルとURLを出力します。出力結果はコンソールに表示すると同時に、クリップボードにもコピーされます。
@@ -18,12 +20,7 @@ URLを入力すると、Markdownに最適な形式で、webページタイトル
 ```
 $ git clone https://github.com/struuuuggle/GetLinkSyntaxForMarkDown.git
 $ cd ./GetLinkSyntaxForMarkDown
-$ which python
-<your path to python>
-$ pwd
-<your path to current directory>
+$ sh setup.sh
+// パスワードの入力が求められます
 ```
  
-- url.shの`~/anaconda/bin/python`を`<your path to python>`に書き換える。
-- url.shの`~/Documents/Chores`を`<your path to current directory>`に書き換える。
-
