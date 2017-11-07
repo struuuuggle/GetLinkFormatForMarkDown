@@ -37,6 +37,6 @@ pwd
 <current directory>
 ```
 
-- url.shの`/Users/Polaris/anaconda/bin/python`を<your path to python>に書き換える。
-- url.shの`~/Documents/Chores`を<current directory>に書き換える。
+- url.shの`/Users/Polaris/anaconda/bin/python`を`<your path to python>`に書き換える。
+- url.shの`~/Documents/Chores`を`<current directory>`に書き換える。
 
