@@ -30,9 +30,10 @@ which python
 
 
 
-- pwd
+- url.shの編集
 
 ```
+cd ./GetLinkSyntaxForMarkDown
 pwd
 <current directory>
 ```
