@@ -18,9 +18,9 @@ URLを入力すると、Markdownに最適な形式で、webページタイトル
 - 以下のコマンドを打ってください。
 
 ```
-$ git clone https://github.com/struuuuggle/GetLinkFormatForMarkDown.git
-$ cd ./GetLinkFormatForMarkDown
-$ sh setup.sh
+git clone https://github.com/struuuuggle/GetLinkFormatForMarkDown.git
+cd ./GetLinkFormatForMarkDown
+sh setup.sh
 // パスワードの入力が求められます
 ```
  
