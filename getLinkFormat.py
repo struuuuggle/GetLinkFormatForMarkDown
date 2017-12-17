@@ -45,7 +45,7 @@ def getLinkFormat():
 
 
 def main():
-    print('Type URL(or exit)')
+    print('Type URL(or \'q\' to exit)')
     getLinkFormat()
 
 
