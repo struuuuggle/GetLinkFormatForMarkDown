@@ -20,7 +20,7 @@ def getLinkFormat():
     while True:
         url = input('>')
 
-        if url == 'exit':
+        if url == 'q':
             break
 
         elif isURL(url):
