@@ -10,7 +10,7 @@ fi
 url=$1
 
 # 該当webページのタイトル
-title=`curl -s $url | ggrep -oP '(?<=<title>).*(?=</title>)'`
+title=`curl -s $url | ggrep -oP '(?<=<title>)(.+)(?=</title>)'`
 
 # 出力
 result="[$title]($url)"
