@@ -10,10 +10,10 @@ fi
 url=$1
 
 # 該当webページのタイトル
-title=`curl -s $url | grep '\<title\>.*<.title>$' | tr -d '(*<title>)(</title>*)'`
+title=`curl -s $url | ggrep -oP '(?<=<title>).*(?=</title>)'`
 
 # 出力
 result="[$title]($url)"
 
 # resultの出力が成功したら、クリップボードにコピー
-echo $result && echo $result | pbcopy
+echo $result && echo $result | pbcopy && echo 'Copied!'

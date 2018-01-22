@@ -1,35 +1,27 @@
-# grl 
+# mdl
 
-My own command grl enables you to copy a link format for Markdown.
+My own command mdl enables you to copy a link format for Markdown.
 
-## 環境
-- maxOS Sierra version 10.12.6
-- Python 3.6.1
+## Requirements
+- macOS
 
-## デモ
+## Demo
 
-![https://gyazo.com/755fb3175e4e4d54511c2e76c2c35c4b](https://gyazo.com/755fb3175e4e4d54511c2e76c2c35c4b.gif)
+![https://gyazo.com/60a50fccc3e505f18ef7a82371abf94f](https://gyazo.com/60a50fccc3e505f18ef7a82371abf94f.gif)
 
-## 仕様
-URLを入力すると、Markdownに最適な形式で、webページタイトルとURLを出力します。出力結果はコンソールに表示すると同時に、クリップボードにもコピーされます。
+## Install
 
-## 準備
-
-- 以下のコマンドを打ってください。
-
-```
-git clone https://github.com/struuuuggle/GetLinkFormatForMarkDown.git
-cd ./GetLinkFormatForMarkDown
+```shell
+git clone https://github.com/struuuuggle/mdl.git
+cd ./mdl/shell
 sh setup.sh
-// パスワードの入力が求められます
+// Type your password
 ```
+
+That's all!
  
-- これで準備は終了です。
+## Usage
 
-## 使い方
-
-```
-$ grl
-Type URL(or exit)
-> <input URL>
+```shell
+$ mdl <URL>
 ```
